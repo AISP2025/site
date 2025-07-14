@@ -12,7 +12,7 @@
 body {
   font-family: "lato", sans-serifW;
 }
-/* ======================================== Navigation ======================================== */
+/* ======================================== Navigation ========================================*/
 .nav__btn-icon {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -111,7 +111,7 @@ body {
     font-weight: bold;
   }
 }
-/* ======================================== Hero ======================================== */
+/* ======================================== Hero ========================================*/
 .hero-about--img {
   display: flex;
   z-index: -2;
@@ -171,7 +171,7 @@ body {
     line-height: 3.5rem;
   }
 }
-/* ======================================== Location ======================================== */
+/* ======================================== Location ========================================*/
 .location__container {
   display: flex;
   flex-direction: column;
@@ -200,10 +200,11 @@ body {
 }
 .accomo__list {
   display: grid;
-  grid-template-columns: 4fr 6fr; /* ✅ 이미지:글자 비율 4:6 */
+  grid-template-columns: 1fr 2fr;
   margin-right: 4.75rem;
   margin-left: 4.75rem;
   gap: 3rem;
+  /* margin-top: 2rem; */
   padding-left: 0;
   list-style: none;
 }
@@ -212,14 +213,14 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 100%; /* 이미지가 컨테이너에 맞게 */
+  width: 87%;
 }
 .accomo__img {
   z-index: 2;
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 100%; /* 컨테이너 비율에 맞춤 */
+  /* width: 87%; */
 }
 .location__decoration {
   display: block;
@@ -262,14 +263,15 @@ body {
 }
 .location__img-container {
   position: relative;
-  min-width: 13rem; /* ✅ 이미지 컨테이너 최소크기 조정 */
-  min-height: 9rem;
+  min-width: 17rem;
+  min-height: 12rem;
   margin-right: 1rem;
 }
 .accomo__img-container {
   position: relative;
   min-width: 13rem;
-  min-height: 9rem;
+  min-height: 8rem;
+  /* margin-right:1rem; */
 }
 @media screen and (min-width: 850px) {
   .location__h2 {
@@ -278,14 +280,16 @@ body {
   }
   .location__img-container {
     position: relative;
-    min-width: 20rem; /* ✅ 큰 화면에서 이미지도 조금 축소 */
-    min-height: 14rem;
+    min-width: 35rem;
+    min-height: 25rem;
     margin-right: 1rem;
   }
+
   .accomo__img-container {
     position: relative;
-    min-width: 20rem;
-    min-height: 14rem;
+    min-width: 13rem;
+    min-height: 8rem;
+    /* margin-right:1rem; */
   }
 }
 .horizontal__list {
@@ -318,6 +322,7 @@ body {
     justify-content: center;
     margin-right: 0rem;
     margin-left: 0rem;
+    /* padding-left:0; */
   }
   .map_img {
     display: flex;
@@ -328,7 +333,7 @@ body {
     height: auto;
   }
 }
-/* ======================================== Footer ======================================== */
+/* ======================================== Footer ========================================*/
 .footer__container {
   display: block;
   position: relative;
